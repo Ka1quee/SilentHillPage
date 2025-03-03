@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --branco: #fff;
+    --text: #00000085;
+    --ps_blue: rgb(36, 122, 234);
+    --blue_hover:  rgb(32, 105, 202);
+    --btn_2: #cfcfcf;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+.cabecalho_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    background-color: var(--branco);
+}
+
+.logo_sony{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+.sony_img{
+    height: 25px;
+}
+
+.header_right, .header_left, .header_down{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_img {
+    height: 50px;
+}
+
+.nav_link{
+    display: flex;
+    gap: 20px;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+
+}
+
+
+.nav_item a,
+i {
+    color: var(--text);
+    transition: 0.5s;
+}
+
+.nav_item a:hover{
+color: var(--ps_blue);
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    background: var(--ps_blue);
+    color: var(--branco);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.btn_down{
+    padding: 7px 20px ;
+    border: none;
+    background: #e3e3e3;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.btn_down:hover{
+    background: var(--btn_2);
+
+}
+
+.btn:hover{
+    background-color: var(--blue_hover);
+}
+
+.header_left{
+    margin-right: 20px;
+}
+
+.header_down{
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--branco);
+}
+/* main */
+
+
+.game_hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 70%), 
+                      url(/assets/img/silent_hill_walpaper.webp);
+    width: 100%;
+    height: auto;
+    color: var(--branco);
+    padding: 60px 0px 200px 0px;
+}
+
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.subtitle{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.price{
+    padding: 60px 0px 20px 0px;
+}
+.price h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.btns_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+}
+
+.btns_container button{
+background-color: orangered;
+padding: 12px 90px;
+}
+
+#container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
